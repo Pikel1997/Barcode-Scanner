@@ -46,7 +46,6 @@ def csv_file():
     
 def get_info():
     global barcodedata
-    headers = ['title', 'subtitle', 'author', 'publisher']
     barcodedata = ['', '', '', '']
     for isbns in isbn:
         url = f'https://www.googleapis.com/books/v1/volumes?q={isbns}'
